@@ -7,7 +7,7 @@ declare var $: any;
   styleUrls: ['./como-ayudar.component.scss']
 })
 export class ComoAyudarComponent implements AfterViewInit {
-
+  title:string="¿Cómo Ayudar?"
   constructor() { }
 
   ngAfterViewInit(): void {
