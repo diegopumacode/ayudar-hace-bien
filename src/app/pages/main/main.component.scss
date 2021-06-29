@@ -36,6 +36,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .container-main{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .content-links{
+            margin-top: 40px;
+        }
+    }
     footer{
         display: flex;
         flex-direction: column;
@@ -62,7 +70,7 @@
 
 @media (max-width: 385px) and  (min-width: 0px){ 
 
-    .aer{
+    .content-links{
         padding-top: 40px;
     }
 }
