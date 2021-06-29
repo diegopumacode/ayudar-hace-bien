@@ -7,6 +7,30 @@
         display: none;
     }
 }
+
+.unete{
+    display: none;
+}
+
+@media (max-width: 576px) and  (min-width: 0px){ 
+    .unete{
+        display: block;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:10px;
+        span{
+            background-color: var(--color-green-1);
+            padding: 10px 10px 5px 10px;
+            border-radius: 10px;
+            color: white;
+        }
+    }
+}
 .navbar-adra *{
     color: white;
 }
