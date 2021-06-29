@@ -3,10 +3,9 @@
 .container-ayuda{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    height: 100vh;
+    min-height: 70vh;
     background-color: white;
     p{
         text-align: center;
@@ -118,7 +117,7 @@
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
     .content-page{
         display: flex;
         flex-direction: column;
@@ -126,6 +125,15 @@
 
         .container-ayuda{
             flex: 5;
+            
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+                height: 0vh;
+                background-color: white;
+
         }
         .notice{
             flex-basis: 150px;
@@ -166,7 +174,9 @@
 
 @media (max-width: 385px) and  (min-width: 0px){ 
 
- 
+    .container-ayuda{
+        margin-top: 40px;
+    }
     .boxes{
         
         display: grid;
