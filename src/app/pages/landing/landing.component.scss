@@ -1,0 +1,57 @@
+.container-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 60px;
+    gap: 10px;
+    &__image{
+        width: 200px;
+    }
+    &__description{
+        max-width: 300px;
+        text-align: center;
+        margin-top: 0;
+        line-height: 15px;
+    }
+}
+
+.goal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+    *{
+        margin: 0;
+    }
+
+    &__title{
+        font-weight: bold;
+    }
+
+    &__total{
+        
+        color: var(--color-green-1);
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    &__progress{
+        background: var(--color-green-ligth-1);
+        width: 250px;
+        border-radius: 30px;
+        .progress-bar{
+            background: var(--color-green-1);
+        }
+    }
+}
+
+.btn-colaborate{
+    background-color: var(--color-red-1);
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 5px 20px;
+}

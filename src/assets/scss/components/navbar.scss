@@ -1,0 +1,103 @@
+
+.navbar-adra{
+    background-color: var(--color-green-1);
+    .green-logo{
+        display: none;
+    }
+}
+.navbar-adra *{
+    color: white;
+}
+
+.nav-voluntario span{
+    background-color: #464646;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 5px;   
+    
+}
+
+.nav-information{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+    color: white;
+    div{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: var(--color-gray-3);
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+}
+
+.nav-information p{
+    margin: 0;
+    font-size: .85rem;
+}
+
+
+@media  (min-width: 1400px){ 
+    .navbar-collapse{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navbar-nav{
+        display: flex;
+        gap: 35px;
+    }
+ }
+
+ @media (min-width: 1200px){ 
+    .navbar-collapse{
+        display: flex;justify-content: flex-end;
+    }
+    .navbar-nav{
+        display: flex;
+        gap: 25px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .navbar-collapse{
+        display: flex;justify-content: flex-end;
+    }
+    .navbar-nav{
+        display: flex;
+        gap: 10px;
+    }
+}
+@media (max-width: 576px) { 
+    .nav-information{
+        div{
+            display: flex;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            background: var(--color-green-1);
+            color: white;
+            gap: 0px;
+            padding: 10px 0;
+            span{
+                margin: 0;
+            }
+        }  
+    }
+    .navbar{
+        background-color: white;
+        *{
+            color: var(--color-green-1) !important;
+        }
+        .white-logo{
+            display: none;
+        }
+
+        .green-logo{
+            display: block;
+        }
+        
+    }
+    
+}

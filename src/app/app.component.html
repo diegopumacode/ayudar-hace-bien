@@ -1,0 +1,46 @@
+<header class="header-adra fixed-top">
+
+    <div class="nav-information">
+        <div class="container-fluid">
+            <span><i class="fab fa-whatsapp"></i> +51 997 555 048</span>
+            <span><i class="fas fa-envelope"></i> donacion@adra.com.pe</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-adra navbar-dark ">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img class="white-logo" src="./../assets/img/adra-white.png" width="120"/>
+                <img class="green-logo" src="./../assets/img/adra-horizontal-logo.png" width="120"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse raa" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}">Inicio</a>
+                <a class="nav-link" routerLink="/como-ayudar" routerLinkActive="active">Como Ayudar?</a>
+                <a class="nav-link" routerLink="/porque-ayudar" routerLinkActive="active">Porque Ayudar?</a>
+                <a class="nav-link" routerLink="/como-donar" routerLinkActive="active">Como Donar?</a>
+                <a class="nav-link nav-voluntario">
+                    <span>Unete como voluntario</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+<footer class="" style="bottom: 0;background-color: var(--color-gray-3);color:white;height: 20px;width: 100%;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="credits ml-auto">
+                <span class="copyright"> © 2021, Hecho con <i class="fa fa-heart heart"></i> por ADRA Perú </span>
+            </div>
+        </div>
+    </div>
+</footer>
