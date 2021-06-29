@@ -49,6 +49,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    line-height: 1.2;
+    background-color: var(--color-gray-3);
 }
 
 *{
@@ -61,6 +63,7 @@ body {
 .content-page{
     padding-top: 80px;
     min-height: 100vh;
+    background-color: white;
 }
 
 // titulo de cada pagina
@@ -71,6 +74,7 @@ body {
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .text-red {

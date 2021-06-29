@@ -18,13 +18,13 @@
         </button>
         <div class="collapse navbar-collapse raa" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" aria-current="page" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
                     true}">Inicio</a>
-                <a class="nav-link" routerLink="/como-ayudar" routerLinkActive="active">Como Ayudar?</a>
-                <a class="nav-link" routerLink="/porque-ayudar" routerLinkActive="active">Porque Ayudar?</a>
-                <a class="nav-link" routerLink="/como-donar" routerLinkActive="active">Como Donar?</a>
-                <a class="nav-link nav-voluntario">
-                    <span>Unete como voluntario</span>
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="/como-ayudar" routerLinkActive="active">¿Cómo Ayudar?</a>
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="/porque-ayudar" routerLinkActive="active">¿Por qué Ayudar?</a>
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="/como-donar" routerLinkActive="active">¿Cómo Donar?</a>
+                <a class="nav-link nav-voluntario" style="cursor: pointer;" href="https://www.adra.org.pe/voluntariado">
+                    <span>Únete como voluntario</span>
                 </a>
             </div>
         </div>
@@ -35,7 +35,7 @@
 <main>
     <router-outlet></router-outlet>
 </main>
-<footer class="" style="bottom: 0;background-color: var(--color-gray-3);color:white;height: 20px;width: 100%;">
+<footer class="" style="background-color: var(--color-gray-3);color:white;height: 20px;width: 100%;padding: 0 10px;">
     <div class="container-fluid">
         <div class="row">
             <div class="credits ml-auto">

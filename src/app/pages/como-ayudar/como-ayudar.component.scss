@@ -1,9 +1,13 @@
+
+
 .container-ayuda{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
+    height: 100vh;
+    background-color: white;
     p{
         text-align: center;
     }
@@ -31,11 +35,11 @@
     }
     img{
         width: 100px;
-        opacity: 0.2;
     }
-
+    
     &__map{
         position: absolute;
+        opacity: 8;
         top:20%;
         right: 0;
         z-index: -1;
@@ -43,6 +47,7 @@
     &__point{
         position: absolute;
         top:20%;
+        opacity: 0.2;
         left: 0;
         z-index: -1;
     }
@@ -112,6 +117,28 @@
     }
 }
 
+
+@media screen and (min-width: 1200px) {
+    .content-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .container-ayuda{
+            flex: 5;
+        }
+        .notice{
+            flex-basis: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+} 
 @media (max-width: 880px) and (min-width: 385px) { 
     .boxes{
         display: grid;
@@ -146,11 +173,13 @@
         gap: 20px;
         .box{
             img{
-                width: 150px;
+                width: 120px;
             }
             &__kilo{
                 width: 40px;
                 height: 40px;
+                right: -20px;
+                top: 80px;
                 span{
                     font-size: .4rem;
     
@@ -158,6 +187,9 @@
                 .number{
                     font-size: .6rem;
                 }
+            }
+            &__action{
+                font-size: .8rem;
             }
         }
     }

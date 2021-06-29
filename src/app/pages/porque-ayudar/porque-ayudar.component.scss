@@ -19,7 +19,7 @@
         flex-direction: column;
         gap: 20px;
         .action{
-            padding: 10px;
+            padding: 10px 20px;
             background: var(--color-green-1);
             display: flex;
             justify-content: center;
@@ -80,17 +80,38 @@
     }
 }
 
-@media (min-width: 1200px){ 
-    .hero{
-        .video-yt{
-            width: 560px;
-            height: 280px;
+@media screen and (min-width: 1280px) {
+    .content-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .hero{
+            flex: 5;
+            display: flex;
+            justify-content: center;
+            .video-yt{
+                width: 560px;
+                height: 290px;
+            }
+        }
+        .footer-web{
+            flex-basis: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            p{
+                font-size: 1rem;
+            }
         }
     }
- }
+} 
+
 
  @media (max-width: 1200px) and (min-width: 830px){ 
     .hero{
+        background-color: yellow;
         .video-yt{
             width: 560px;
             height: 360px;
