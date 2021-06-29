@@ -35,6 +35,20 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 1280px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        height: 165px;
+        .voluntario{
+            position: relative;
+        bottom: 0;
+        }
+    }
+}
+
 @media (max-width: 830px) and (min-width:0) { 
     .voluntario{
         p{
