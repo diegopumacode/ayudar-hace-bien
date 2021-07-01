@@ -13,16 +13,19 @@
 }
 
 @media (max-width: 576px) and  (min-width: 0px){ 
+    .navbar{
+        z-index: 1;
+    }
     .unete{
         display: block;
-        position: absolute;
-        top: 100px;
+        position: sticky;
+        top: -4px;
         width: 100%;
         height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top:10px;
+        z-index: 2;
         span{
             background-color: var(--color-green-1);
             padding: 10px 10px 5px 10px;
