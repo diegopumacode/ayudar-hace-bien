@@ -29,7 +29,7 @@
         span{
             background-color: var(--color-green-1);
             padding: 10px 10px 5px 10px;
-            border-radius: 10px;
+            border-radius: 0 0 7px 7px;
             color: white;
         }
     }
@@ -39,11 +39,11 @@
 }
 
 .nav-voluntario span{
-    background-color: #464646;
-    color: white !important;
+    color: #464646;
+    background-color: white !important;
     padding: 10px 15px;
     border-radius: 5px;   
-    
+    font-weight: bold;
 }
 
 .nav-information{
@@ -99,6 +99,7 @@
     }
 }
 @media (max-width: 576px) { 
+    
     .nav-information{
         div{
             display: flex;
@@ -116,6 +117,10 @@
     }
     .navbar{
         background-color: white;
+        .nav-link.nav-voluntario span{
+            background-color: var(--color-green-1) !important;
+            color: white !important;
+        }
         *{
             color: var(--color-green-1) !important;
         }
